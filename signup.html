@@ -43,7 +43,21 @@
       </select>
     </div>
     <div>
-      <button type="button">signup</button> 
+      <button onclick="myfunction()">signup</button>
+       
     </div>
+    <div id="first"></div>
+    <div id="second"></div>
+  <script>
+    function myfunction()
+    {
+     var firstname= document.getElementById("firstname");
+     var lastname= document.getElementById("lastname");
+     var mobilenumber= document.getElementById("mobilenumber");
+      document.getElementById("first").innerHTML="hello "+firstname.value+lastname.value;
+      document.getElementById("second").innerHTML="your mobile number "+mobilenumber.value
+
+    }
+  </script>
   </body>
 </html>
