@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>finding even or odd</title>
+
+</head>
+<body>
+  <h1><b>Finding even or odd</b></h1>
+  <label>please enter a number: </label><br>
+  <input type="textbox" id="number" name="number"><br>
+  <button onclick="myfunction()">submit</button>
+</body>
+<div id="result"></div>
+<script>
+ function myfunction()
+  {
+    var numberelement=document.getElementById('number');
+    var inputstorage=numberelement.value;
+    console.log(inputstorage);
+    if(inputstorage)
+    
+     {
+      if(inputstorage%2==0)
+        {
+          document.getElementById("result").innerHTML="this"+inputstorage+"is a even number";
+        }
+      
+       else
+        {
+          document.getElementById("result").innerHTML="this"+inputstorage+"is a odd number";
+        }
+      }
+    else
+    {
+      alert("please enter any number");
+    }
+  }
+    
+    </script>
+</html>
