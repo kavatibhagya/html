@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fibonacci series</title>
+  </head>
+  <body>
+    <label><b>FIBONACCI SERIES</b></label><br>
+    <label>enter any number: </label><br>
+     <input type=textbox name="fnumber" id="fnumber"><br>
+     <button onclick=myfunction()>submit</button>
+     <div id="result"></div>
+     <script>
+       function myfunction()
+       {
+         var f1=0;
+         var f2=1;
+         var x=document.getElementById("fnumber");
+         var n=x.value;
+         var fibonacci="0,1";
+        for(i=0;i<n;i++)
+         {
+         var sum=f1+f2;
+         f1=f2;
+         f2=sum;
+         fibonacci=fibonacci+","+sum;
+         }
+         document.getElementById("result").innerHTML="The fibonacci series is"+fibonacci;
+         
+         
+       }
+     </script>
+
+  </body>
+</html>
