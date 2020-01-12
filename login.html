@@ -9,11 +9,12 @@
       <p>
         <label>Username: </label>
         <input type="text" placeholder="username" id="username"/>
-        <div id= "result"></div>
+        <div id= "result1"></div>
       </p>
       <p>
         <label>Password: </label>
         <input type="password" placeholder="password" id="password"/>
+        <div id="result2"></div>
       </p>
       <p>
         <button type=submit name="login">Login</button>
@@ -25,18 +26,30 @@
       {
         var username=document.getElementById("username");
         var password=document.getElementById("password");
-        if(username.value==" "||password.value=="")
-        {
-          alert("please enter username and password");
-          return false;
-        }
-        else{
-           return true;
-
-        }
         
-      }
+        if(username.value=="")
+       
+          {
+           document.getElementById("result1").innerHTML="please enter username";
+        
+          }
+       
+          else if(password.value=="")
+          
+            {
+                document.getElementById("result2").innerHTML="please enter password";
+                return false;
+          
+            }
+            else  
+          
+             {
+                  return true;
 
-    </script>
+              }
+          
+      }
+        
+     </script>
   </body>
 </html>
