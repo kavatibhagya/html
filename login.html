@@ -4,23 +4,39 @@
     <title>Login page</title>
   </head>
   <body>
-    <form>
+    <form  onsubmit=" return validate()" action="message.html">
       <h1>Login Page</h1>
       <p>
-        <label>Username</label>
-        <input type="text" name="username" id="username"/>
+        <label>Username: </label>
+        <input type="text" placeholder="username" id="username"/>
+        <div id= "result"></div>
       </p>
       <p>
-        <label>Password</label>
-        <input type="password" name="password" id="password"/>
+        <label>Password: </label>
+        <input type="password" placeholder="password" id="password"/>
       </p>
       <p>
-        <button name="login">Login</button>
+        <button type=submit name="login">Login</button>
       </p>
     </form>
 
     <script>
-      
+      function validate()
+      {
+        var username=document.getElementById("username");
+        var password=document.getElementById("password");
+        if(username.value==" "||password.value=="")
+        {
+          alert("please enter username and password");
+          return false;
+        }
+        else{
+           return true;
+
+        }
+        
+      }
+
     </script>
   </body>
 </html>
