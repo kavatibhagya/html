@@ -27,26 +27,29 @@
         var username=document.getElementById("username");
         var password=document.getElementById("password");
         
-        if(username.value=="")
        
-          {
-           document.getElementById("result1").innerHTML="please enter username";
-        
-          }
-       
-          else if(password.value=="")
-          
+       if(username.value==""||password.value=="")
+       {
+              if(username.value=="")
             {
-                document.getElementById("result2").innerHTML="please enter password";
-                return false;
-          
+                document.getElementById("result1").innerHTML="please enter user name";
+            
             }
-            else  
-          
-             {
-                  return true;
+            else
+            {
+                document.getElementById("result1").innerHTML="";
+            }
+            if(password.value=="")
+            {
+              document.getElementById("result2").innerHTML="please enter password";
 
-              }
+            }
+            else
+            {
+              document.getElementById("result2").innerHTML="";
+            }
+            return false;
+       }
           
       }
         
