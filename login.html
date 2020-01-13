@@ -2,22 +2,23 @@
 <html>
   <head>
     <title>Login page</title>
+    <link rel="stylesheet" href="loginstyle.css">
   </head>
   <body>
-    <form  onsubmit=" return validate()" action="message.html">
+    <form  onsubmit=" return validate()" action="message.html" class="container">
       <h1>Login Page</h1>
       <p>
-        <label>Username: </label>
-        <input type="text" placeholder="username" id="username"/>
+        <label class="user">Username</label>
+        <input  class="box" type="text" placeholder="username" id="username"/>
         <div id= "result1"></div>
       </p>
       <p>
-        <label>Password: </label>
-        <input type="password" placeholder="password" id="password"/>
+        <label class="password">Password </label>
+        <input  class="box" type="password" placeholder="password" id="password"/>
         <div id="result2"></div>
       </p>
       <p>
-        <button type=submit name="login">Login</button>
+        <button class="button" type=submit name="login">Login</button>
       </p>
     </form>
 
