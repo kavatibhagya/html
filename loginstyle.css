@@ -1,18 +1,25 @@
 body
 {
-  background-color: rgb(189, 77, 172);
+  background-image:url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: sans-serif;
   font-size: 20px;
 }
 .container{
     width:300px;
     height:400px;
-    background-color: rgb(48, 208, 125);
+    background-image: url(image2.jpg);
+    background-color: rgba(0,0,0,35%);
+    background-blend-mode: multiply;
     position:relative;
     margin: 0 auto;
     top:200px;
     border-radius:10px;
     text-align: center;
+    color: rgb(223, 73, 73);
+   font-style: san serif;
+   font-weight: bold;
     
 }
 .user,.password
@@ -38,12 +45,12 @@ body
 .button
 {
     height: 30px;
-    width:70px;
+    width:100px;
     border-radius: 10px;
     background-color: indianred;
     border-width: 0px;
     outline-width: 0px;
-    font-size: 10px;
+    font-size: 15px;
     display: inline-block;
     
 }
